@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+div {
+    background-color: black;
+    height: 200px;
+    line-height: 200px;
+}
+
+div .text {
+    text-align: center;
+    color: white;
+    animation: firstAnimation 5s 3 forwards alternate paused step-start;
+}
+
+div:hover .text {
+    animation-play-state: running;
+}
+
+@keyframes firstAnimation {
+    25% {
+        font-size: 16px;
+        color: green;
+    }
+
+    50% {
+        font-size: 8px;
+        color: yellow;
+    }
+
+    75% {
+        font-size: 16px;
+        color: orange;
+    }
+    
+    100% {
+        font-size: 24px;
+        color: red;
+    }
+}
+
+
+
+
